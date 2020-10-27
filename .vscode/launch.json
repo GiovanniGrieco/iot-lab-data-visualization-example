@@ -15,8 +15,10 @@
             "sourceMaps": true,
             "env": {
                 "NODE_ENV": "local",
-                "IotHubConnectionString": "",
-                "EventHubConsumerGroup": "monitoring"
+                // Pick it up from your IoT Hub -> Shared Access Policies -> service -> Connection string—primary key
+                "IotHubConnectionString": "INSERT_HERE_YOUR_IOT_HUB_CONNECTION_STRING",
+                // Pick it up from your IoT Hub -> Built-in Endpoints -> Consumer Groups
+                "EventHubConsumerGroup": "$Default"
             }
         }
     ]
